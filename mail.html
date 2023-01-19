@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That.gingerart</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <script src="https://kit.fontawesome.com/5a33ccea5a.js" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+
+
+<body class="body Mailbody">
+
+    <!--logo and navbar -->
+    <section id="header">
+        <a href="index.html"><img src="cat2.gif" alt="" id="logo"></a>
+        <h1 class="heading1" style="margin-top: 30px; font-size: 200%; margin-right: 200px; padding-right: 150px;">
+            <span>Ginger Art</span>
+        </h1>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Category</a>
+                    <div class="submenu-1">
+                        <ul>
+                            <li><a href="t-shirt.html">T-shirts</a></li>
+                            <li><a href="jacket.html">Jackets</a></li>
+                            <li><a href="pants.html">Pants</a></li>
+                            <li><a href="accessories.html">Accessories</a></li>
+                            <li><a href="hoodies.html">Wall Decor</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="mail.html">Mail</a></li>
+                <!-- <li id="lg-bag"><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li> -->
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+
+
+    <!-- Pop-up Form -->
+
+
+    <table class="FormTable" style="width: 100%;border-collapse: separate;">
+        <col width="49%">
+        <col width="5%">
+        <tr style="margin : 1em">
+            <td class="Formcell" style="padding: 1em;">
+
+                <h1 id="FormHead">Order Now!!</h1>
+                <form method="post" enctype="text/plain" class="form-container" style="width: 100%;" id="myForm">
+
+                    <fieldset style="border: 0;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <label for="Name" class="Label Tag"><b>Name:</b></label>
+                                </td>
+                                <td> <input type="text" placeholder="Enter Your Name" name="Name" class="in-flex txtbox"
+                                        required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="mobile" class="Label Tag"><b>Mobile:</b></label></td>
+                                <td> <input type="tel" placeholder="Enter Your mobile" name="mobile"
+                                        class="in-flex txtbox" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="EmailID" class="Label Tag"><b>E-mail:</b></label></td>
+                                <td><input type="email" placeholder="Enter Your Email" name="EmailID"
+                                        class="in-flex txtbox" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Address" class="Label Tag"><b>Address:</b></label></td>
+
+                                <td><textarea name="Address" placeholder="Enter Your Address" cols="40" rows="4"
+                                        class="textarea txtbox"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Specify" class="Label Tag"><b>Specification:</b></label></td>
+
+                                <td><textarea name="Specify" placeholder="Enter any specific you want" cols="40"
+                                        rows="4" class="textarea txtbox"></textarea></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset style="border: 0;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <label for="Categories" class="Label">Categories:</label>
+                                </td>
+                                <td>
+                                    <select id="Categories" name="Categories">
+                                        <option value="select">Select</option>
+                                        <option value="T-shirt">T-shirt</option>
+                                        <option value="Jackets">Jackets</option>
+                                        <option value="Hoodies">Hoodies</option>
+                                        <!-- <option value="Sneakers">Sneakers</option> -->
+                                        <option value="Shorts">Shorts/Pants</option>
+                                        <option value="Accessories">Other Accessories</option>
+                                        <!-- <option value=""></option> -->
+                                </td>
+                                </select>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <div class="T-shirt Jackets Hoodies CatOp" id="T-shirt">
+                        <fieldset style="border: 0;">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <label for="Gender" class="abel12 Label">Gender:</label>
+                                    </td>
+                                    <td>
+                                        <div class="Gender_radio">
+                                            <input type="radio" id="male" name="Gender" value="male">
+                                            <label for="male">Male</label>
+                                            <input type="radio" id="female" name="Gender" value="female">
+                                            <label for="female" id="tukon">Female</label>
+
+                                            <br>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="Label">Spot/Position:</label>
+
+                                    </td>
+                                    <td>
+                                        <div class="position_checks">
+
+                                            <input type="checkbox" id="Front" name="Front" value="Front" />
+                                            <label for="Front">Front</label>
+                                            <input type="checkbox" id="Back" name="Back" value="Back" />
+                                            <label for="Back">Back</label>
+                                            <input type="checkbox" id="LeftSleeve" name="LeftSleeve"
+                                                value="LeftSleeve" />
+                                            <label for="LeftSleeve">LeftSleeve</label>
+                                            <input type="checkbox" id="RightSleeve" name="RightSleeve"
+                                                value="RightSleeve" />
+                                            <label for="RightSleeve">RightSleeve</label>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </div>
+                    <div class="Shorts CatOp" id="Shorts">
+                        <fieldset style="border: 0;">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <label for="Gender" class="Label">Gender:</label>
+                                    </td>
+                                    <td>
+                                        <div class="Gender_radio">
+                                            <input type="radio" id="male" name="Gender" value="male">
+                                            <label for="male">Male</label>
+                                            <input type="radio" id="female" name="Gender" value="female">
+                                            <label for="female" id="tukon">Female</label>
+
+                                            <br>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <label class="Label">Spot/Position:</label>
+
+                                    </td>
+                                    <td>
+                                        <div class="position_checks">
+
+
+                                            <input type="checkbox" id="LeftLeg" name="Position" value="LeftLeg" />
+                                            <label>LeftLeg</label>
+                                            <input type="checkbox" id="RightLeg" name="Position" value="RightLeg" />
+                                            <label>RightLeg</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+
+                    </div>
+
+                    <div class="Accessories CatOp" id="Accessories">
+                        <fieldset style="border: 0;">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <label class="Label">Select Accessories</label>
+                                    </td>
+                                    <td>
+                                        <div class="position_checks">
+
+                                            <input type="checkbox" id="Cup" name="Accessories" value="Cup" />
+                                            <label>Cup</label>
+                                            <input type="checkbox" id="Bottle" name="Accessories" value="Bottle" />
+                                            <label>Bottle</label>
+                                            <input type="checkbox" id="Other" name="Accessories" value="Other" />
+                                            <label>Other</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </div>
+
+                    <div class="Form-btn">
+                        <button type="submit" class="btn">Send</button>
+                        <button type="reset" class="btn cancel">Cancel</button>
+                    </div>
+                </form>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <div>
+
+                    <img src="accessories4.jpg" class="MailpgImg">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer1">
+
+        <!-- contact  -->
+        <div class="col">
+            <h4>Contact</h4>
+            <p class="more"><strong>Address: </strong> MTB Sardar Vallabhbhai National Institute of Technology,</p>
+            <p class="add">Ichchhanath,Surat-395007, Gujarat, INDIA</p>
+            <p><strong>Phone: </strong> +91 8178199436</p>
+        </div>
+
+
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="About.html">About us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="TnC.html">Terms and Conditions</a>
+            <a href="#">Secure Payment</a>
+        </div>
+
+        <!-- Account details -->
+        <div class="col">
+            <h4>Services</h4>
+            <a href="mail.html">Customize Clothes</a>         
+            <a href="Contact.html">Contact us</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <!-- follow  -->
+        <div class="col">
+            <h4>Follow Us</h4>
+            <div class="icons">
+                <a href="https://instagram.com/that.gingerart?igshid=OGQ2MjdiOTE="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="tel:8178199436"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:nancy1292002@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+
+        $('.CatOp').hide()
+        $('#Categories').change(function () {
+            var value = this.value;
+
+            $('.CatOp').hide()
+            $('.' + this.value).show();
+        });
+</script>
+<script>
+        $('#myForm').on('submit', function (event) {
+            event.preventDefault(); // prevent reload
+
+            var formData = new FormData(this);
+            formData.append('service_id', 'service_yi1iasd');
+            formData.append('template_id', 'template_gfbxpwe');
+            formData.append('user_id', '2IIXrWZTaJoOwBqnm');
+
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+                type: 'POST',
+                data: formData,
+                contentType: false, // auto-detection
+                processData: false // no need to parse formData to string
+            }).done(function () {
+                alert('Your mail is sent!');
+            }).fail(function (error) {
+                alert('Oops... ' + JSON.stringify(error));
+            });
+        });
+    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#myForm')
+    // .then(function(response) {
+    //    console.log('SUCCESS!', response.status, response.text);
+    // }, function(error) {
+    //    console.log('FAILED...', error);
+    // });
+    </script>
+
+
+
+</body>
+
+</html>

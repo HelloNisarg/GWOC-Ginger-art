@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That.gingerart</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js">
+    <script src="https://kit.fontawesome.com/5a33ccea5a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+
+<body class="body">
+
+    <!--logo and navbar -->
+    <section id="header">
+        <a href="index.html"><img src="cat2.gif" alt="" id="logo"></a>
+
+        <!-- <h3 class="one">Ginger art</h3> -->
+        <h1 class="heading1" style="margin-top: 30px; font-size: 200%; margin-right: 200px; padding-right: 150px;"><span>Ginger Art</span>
+        </h1>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Category</a>
+                    <div class="submenu-1">
+                        <ul>
+                            <li><a href="t-shirt.html">T-shirts</a></li>
+                            <li><a href="jacket.html">Jackets</a></li>
+                            <li><a href="pants.html">Pants</a></li>
+                            <li><a href="accessories.html">Accessories</a></li>
+                            <li><a href="hoodies.html">Wall Decor</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="mail.html">Mail</a></li>
+                <!-- <li id="lg-bag"><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li> -->
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <!-- sliders -->
+    <!-- <section class="s">
+        <div class="slider">
+            <div class="slides"> -->
+
+                <!-- radio button start-->
+                <!-- <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4"> -->
+                <!-- radio button end -->
+
+                <!-- slide images start-->
+                <!-- <div class="slide first">
+                    <img src="Instagram.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="kurti.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="accessories8.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="t-shirt5.jpg" alt="">
+                </div> -->
+                <!-- slide image end -->
+
+                <!-- automatic navigation start -->
+                <!-- <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div> -->
+                    <!-- automatic navigation end -->
+                <!-- </div>
+
+            </div> -->
+
+            <!-- manual navigation start -->
+            <!-- <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div> -->
+            <!-- manual navigation end -->
+
+        <!-- </div>
+    </section>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+
+    </script> -->
+    <h1 class="heading" style="margin-top: 100px; font-size: 500%;">Our <span>Art Gallery</span>
+    </h1>
+
+
+    <div class="slider1" class="slider2">
+        <span style="--i:1;"><img src="kurti.jpg"></span>
+        <span style="--i:2;"><img src="pants1.jpg"></span>
+        <span style="--i:3;"><img src="t-shirt5.jpg"></span>
+        <span style="--i:4;"><img src="shorts2.jpg"></span>
+        <span style="--i:5;"><img src="Instagram.jpg"></span>
+        <span style="--i:6;"><img src="shorts3.jpg"></span>
+        <span style="--i:7;"><img src="accessories8.jpg"></span>
+        <span style="--i:8;"><img src="accessories2.jpg"></span>
+    </div>
+
+
+
+
+    <h1 class="heading" style="margin-top: 100px; font-size: 500%;">Our <span>Products</span>
+    </h1>
+
+    <!-- flex box -->
+    <section class="container">
+        <div class="card" onclick="window.location.href='t-shirt.html'">
+            <img src="t-shirt4.webp" alt="" class="photo" id="photo1">
+            <h2 class="nisa">T-shirts</h2>
+            <p class="pagal">Pick a classic tee that your whole team will love</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='jacket.html'">
+            <img src="jacket2.jpg" alt="" class="photo" id="photo2">
+            <h2 class="nisa">Jackets</h2>
+            <p class="pagal">Layer up to your liking with custom jackets-whether on-site or int the office</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='pants.html'">
+            <img src="pants1.jpg" alt="" class="big" id="photo3">
+            <h2 class="nisa">Pants</h2>
+            <p class="pagal">Our goal is to make your pants with a unique style and fitting, in our book selection, you
+                can choose from a wide variety of fine fabrics from all around the world.</p>
+        </div>
+
+    </section>
+
+    <section class="container">
+        <div class="card" onclick="window.location.href='accessories.html'">
+            <img src="accessories2.jpg" alt="" class="photo" id="photo4">
+            <!-- <div class="card-image"></div> -->
+            <h2 class="nisa">Accessories</h2>
+            <p class="pagal"> From wet-molded leather masks, to hand-made capes or custom-designed guitar straps, we offer a full range of bespoke accessories.</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='hoodies.html'">
+            <img src="accessories5.jpg" alt="" class="photo" id="photo5">
+            <!-- <div class="card-image"></div> -->
+            <h2 class="nisa">Wall Decor</h2>
+            <p class="pagal">To make a piece of custom apparel that's one-of-kind, you can even create a personalized hoodie with your favorite photos.</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='shorts.html'">
+            <img src="Instagram.jpg" alt="" class="photo" id="photo6">
+            <!-- <div class="card-image"></div> -->
+            <h2 class="nisa">Shorts</h2>
+            <p class="pagal">At Ginger art, we stock a variety of custom shorts from premium brands, all of which can be branded with your own logo, name, or design.
+            </p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Our features section  -->
+    <section class="features">
+        <h1 class="heading">Our <span>Features</span>
+        </h1>
+
+        <div class="box1">
+
+            <div class="p1">
+                <img src="pants1.jpg" alt="">
+                <h3>Customize Clothes</h3>
+                <p> If an item is characterized as “haute couture,” it means that it's custom-made. Haute couture connotes exclusivity, and one-of-a-kind clothes</p>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+
+            <div class="p1">
+                <img src="delivery2.gif" alt="">
+                <h3> Delivery</h3>
+                <p>Delivery all over India </p>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+
+            <div class="p1">
+                <img src="affordable.jpg" alt="">
+                <h3>Affordable</h3>
+                <p>Don't be slow! Our prices are low.</p>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class="footer1">
+
+    <!-- contact  -->
+    <div class="col">
+        <h4>Contact</h4>
+        <p class="more"><strong>Address: </strong>   MTB Sardar Vallabhbhai National Institute of Technology,</p>
+        <p class="add">Ichchhanath,Surat-395007, Gujarat, INDIA</p>
+        <p><strong>Phone: </strong> +91 8178199436</p>
+    </div>
+
+
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="About.html">About us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="TnC.html">Terms and Conditions</a>
+        <a href="#">Secure Payment</a>
+        
+    </div>
+
+    <!-- Account details -->
+    <div class="col">
+        <h4>Services</h4>
+        <a href="mail.html">Customize Clothes</a>         
+        <a href="Contact.html">Contact us</a>
+        <a href="contact.html">Help</a>
+    </div>
+
+    <!-- follow  -->
+    <div class="col">
+        <h4>Follow Us</h4>
+        <div class="icons">
+            <a href="https://instagram.com/that.gingerart?igshid=OGQ2MjdiOTE="><i class="fa-brands fa-instagram"></i></a>
+            <a href="tel:8178199436"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:nancy1292002@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
